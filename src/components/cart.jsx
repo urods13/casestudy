@@ -1,32 +1,27 @@
 import React, {Component} from 'react';
-//import '../css/header.css';
-import PropTypes from 'prop-types';
+import Forms from './forms.jsx';
+// import ListOfOrder from '../components/ListOfOrder';
+import '../css/cart.css'
+import Formscomponent from './formscomponent.jsx';
+class Cart extends Component{
 
-class Cart extends Component {
-    render(){
-        return(
-                    <Fragment>
-                        <form>
-                            <div>
-                                
-                            </div>
-                            Name: <br/> <input type="text" name="name" placeholder="Name"/><br/>
-                            Address: <br/> <input type="text" name="address" placeholder="Address"/><br/>
-                            Type of Payment: <br/><input id="payment" name="grp1" type="radio" value="Card">Card</input><br/>
-                                            <input id="payment" name="grp1" type="radio" value='Paypal'>Paypal</input><br/>
-                            <br/>
-                            <button type="button" onClick={this.props.handleAddUser}>Delete</button>
-                        </form>
-                    </Fragment>
-                );
-            }
-        }
         
-Cart.propTypes = {
-    handleChangeInfo: PropTypes.func,
-    handleAddUser: PropTypes.func
+          render(){
+        return(
+        <div className="page">
+            <h2 className='title'>Your Shopping Cart</h2>
+            <div className='content'>
+                 Item:
+                 Price:
+                 Total:
+                <form>
+                Quantity:<input type="integer" name="quantity" placeholder=""/><br/>
+                <button>Delete</button>
+                </form>  
+                </div>
+                <Formscomponent/>          
+       </div>
+        );
+    }
 }
-    
-export {
-     Forms
-        }
+export default Cart;

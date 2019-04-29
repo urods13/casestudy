@@ -1,34 +1,39 @@
 .header{
     width: 100%;
-    background-color: #dcf1aa;
+    margin-top: 0;
+    background-color: #dcf1aa;  
 }
-.header a{
-    color: rgb(17, 15, 141);
-    text-decoration: none;
-  }
   .header img{
     width:50px;
     height:50px;
     border:0;
+   
   }
   .nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     text-align: right;
+    
   }
-  .nav li {
+  .nav li{
     display: inline-block;
     font-size: 20px;
     font-weight: bold;
-    padding: 20px;
+    padding: 5px;
+    color: rgb(17, 15, 141);
+    text-decoration: none;
   }
-  header{
-      position: fixed;
+header{
       font-size: 30px;
       font-weight: bold;
       font-family: Georgia, 'Times New Roman', Times, serif;
-      margin-left: 3%;
       color: #130252;
-      text-align: Left;
+      text-align: left;
+      margin: 0% 0 0 5%;
+      width: 100%;
+      text-shadow: 2px,
+
   }
+
+  
